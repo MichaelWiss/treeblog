@@ -53,7 +53,7 @@ gem "paperclip"
 
 gem 'sorcery'
 
-gem 'protected_attributes'
+
 
 
 
