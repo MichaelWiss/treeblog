@@ -48,3 +48,5 @@ group :production do
 end
 
 gem 'heroku', '~> 3.9.6'
+
+gem "paperclip"
