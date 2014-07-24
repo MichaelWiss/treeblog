@@ -8,7 +8,7 @@ end
 
 def index
 	@articles = Article.all
-
+  @tag = Tag.all
 
 end
 
