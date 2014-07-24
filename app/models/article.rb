@@ -1,4 +1,6 @@
 class Article < ActiveRecord::Base
+	attr_accessible:image_file_name
+	
 	has_many :comments
 	has_many :taggings
 	has_many :tags, through: :taggings
