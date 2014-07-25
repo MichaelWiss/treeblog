@@ -41,7 +41,8 @@
  
         <h3><%= link_to article.title, article_path(article), class: 'article_title' %></a></h3>
         <%= link_to "Create a New Article", new_article_path, class: "new_article" %>
-        <h6>Written by <a href="#">John Smith</a> on August 12, 2012.</h6>
+        <!--<h6>Written by <a href="#">John Smith</a> on August 12, 2012.</h6>-->
+        <h3>Written by <% @authors  %> </h3>
  
         <div class="row">
           <div class="large-6 columns">

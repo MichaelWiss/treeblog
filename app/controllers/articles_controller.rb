@@ -10,19 +10,28 @@ def index
 	@articles = Article.all
   @tag = Tag.all
 
+
 end
 
 def show
     @article = Article.find(params[:id])
     @comment = Comment.new
     @comment.article_id = @article.id
+
 end
 
- def create
-    @article = Article.new(article_params)
-    @article.save
+ #def create
+    #@article = Article.new(article_params)
+    #@article.save
 
-    redirect_to article_path(@article)
+    #redirect_to article_path(@article)
+  #end
+
+   def create
+        @article = current_user.articles.new(article_params)
+        @article.save
+        flash.notice = "Article '#{@article.title}' Posted!"
+        redirect_to article_path(@article)
   end
 
   def destroy

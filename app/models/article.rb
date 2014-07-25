@@ -1,4 +1,5 @@
 class Article < ActiveRecord::Base
+	belongs_to :author
 	has_many :comments
 	has_many :taggings
 	has_many :tags, through: :taggings
@@ -6,11 +7,11 @@ class Article < ActiveRecord::Base
 	has_many :featured
 
 	has_attached_file :image
-validates_attachment_content_type :image, :content_type => ["image/jpg", "image/jpeg", "image/png"]
+    validates_attachment_content_type :image, :content_type => ["image/jpg", "image/jpeg", "image/png"]
 
-def tag_list
-  tags.join(", ")
-end
+   def tag_list
+       tags.join(", ")
+    end
 
   def tag_list=(tags_string)
     tag_names = tags_string.split(",").collect{|s| s.strip.downcase}.uniq
