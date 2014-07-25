@@ -4,13 +4,12 @@
     <div class="large-12 columns">
       <div class="nav-bar right">
        <ul class="button-group">
-         <li><a href="#" class="button">Link 1</a></li>
-         <li><a href="#" class="button">Link 2</a></li>
-         <li><a href="#" class="button">Link 3</a></li>
-         <li><a href="#" class="button">Link 4</a></li>
+         <li><%= link_to 'Log in', login_path, :class => " button"  %></li>
+         <li><%= link_to 'Authors', authors_path, :class => " button"  %></li>
+         <li><%= link_to 'My Resume', "http://resume-alpha.michaelrwiss.com/", :class => "button"%></li>
         </ul>
       </div>
-      <h1>Food Blog <small>This is my blog. </small></h1>
+      <h1 class="title">Food Blog <!--<small>This is my blog. </small>--></h1>
       <%= link_to "Create a New Article", new_article_path, class: "new_article" %>
       <hr/>
     </div>
