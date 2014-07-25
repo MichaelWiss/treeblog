@@ -1,5 +1,12 @@
-1. generated featured model
+
+1. Heroku doesn't store images permanently, need Amazon S3 account to get paperclip to work.
+
+2. Set up Author has_many articles relationship but can't figure out how to show on articles index page.
+
+3. generated featured model
 
     http://stackoverflow.com/questions/3908971/adding-featured-posts-to-my-blog
     
     will need to swing back and use a form helper.
+
+
