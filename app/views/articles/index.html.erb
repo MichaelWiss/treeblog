@@ -38,7 +38,7 @@
  
       <article>
  
-        <h3><%= link_to article.title, article_path(article), class: 'article_title' %></a></h3>
+        <h2><%= link_to article.title, article_path(article), class: 'article_title' %></a></h2>
         <%= link_to "Create a New Article", new_article_path, class: "new_article" %>
         <!--<h6>Written by <a href="#">John Smith</a> on August 12, 2012.</h6>-->
         <h3>Written by <%= @users %> </h3>
@@ -80,7 +80,7 @@
     <li>
     <%= link_to tag.name, tag_path(tag) %>
     &nbsp
-    <%= link_to "delete", tag_path(tag), :method => :delete %>
+    <em><%= link_to "delete", tag_path(tag), :method => :delete %></em>
     </li>
   <% end %>
 </ul>

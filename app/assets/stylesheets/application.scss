@@ -18,5 +18,20 @@
  *= require foundation_and_overrides
 
  */
+@font-face {
+    font-family: 'nerissemibold_italic';
+    src: url('Neris-SemiBoldItalic-webfont.eot');
+    src: url('Neris-SemiBoldItalic-webfont.eot?#iefix') format('embedded-opentype'),
+         url('Neris-SemiBoldItalic-webfont.woff') format('woff'),
+         url('Neris-SemiBoldItalic-webfont.ttf') format('truetype'),
+         url('Neris-SemiBoldItalic-webfont.svg#nerissemibold_italic') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
  .title h1 {text-align: center; margin:0 auto;}
  body {background-image:url('food.png');}
+ aside ul {list-style-type:none;}
+ h1 {font-family: 'nerissemibold_italic';}
