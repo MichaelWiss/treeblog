@@ -1,9 +1,18 @@
+
+<div class="row">
+ 
+     
+    <div class="large-9 columns" role="content">
+
+
 <%= form_for(@article, html: {multipart: true}) do |f| %>
   <ul>
   <% @article.errors.full_messages.each do |error| %>
     <li><%= error %></li>
   <% end %>
   </ul>
+  <div class="row">
+      <div class="large-6 columns">
   <p>
     <%= f.label :title %><br />
     <%= f.text_field :title %>
@@ -26,4 +35,6 @@
   <p>
     <%= f.submit %>
   </p>
+  </ul>
+ </div>
   <% end %>
