@@ -8,20 +8,12 @@ class Article < ActiveRecord::Base
 
 
 	has_attached_file :image,
-	:storage => :s3,
-    :s3_credentials => {
-      :bucket => ENV['treeblog'],
-      :access_key_id => ENV['AKIAJE56SC5HH3XW3VTA'],
-      :secret_access_key => ENV['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']
-    },
-    :path => ":filename.:extension"
-
-    validates_attachment_content_type :image, :content_type => /\Aimage\/.*\Z/
+        :path => ":rails_root/public/system/:attachment/:id/:style/:filename",
+        :url => "/system/:attachment/:id/:style/:filename"
 
  
- 
-	
-
+	validates_attachment_content_type :image, :content_type => /\Aimage\/.*\Z/
+  
 
    def tag_list
        tags.join(", ")
