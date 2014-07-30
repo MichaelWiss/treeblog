@@ -49,7 +49,7 @@ end
 
 gem 'heroku', '~> 3.9.6'
 
-gem "paperclip"
+gem "paperclip", "~> 4.1"
 gem 'aws-sdk'
 
 gem 'sorcery'

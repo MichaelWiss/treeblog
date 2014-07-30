@@ -181,7 +181,7 @@ DEPENDENCIES
   heroku (~> 3.9.6)
   jbuilder (~> 2.0)
   jquery-rails
-  paperclip
+  paperclip (~> 4.1)
   pg (= 0.15.1)
   rails (= 4.1.0)
   rails_12factor (= 0.0.2)
