@@ -35,7 +35,7 @@ Rails.application.configure do
 
   # Version of your assets, change this if you want to expire all your assets.
   config.assets.version = '1.0'
-  config.assets.paths << Rails.root.join('app', 'assets', 'fonts')
+
 
   # Specifies the header that your server uses for sending files.
   # config.action_dispatch.x_sendfile_header = "X-Sendfile" # for apache
@@ -82,4 +82,13 @@ Rails.application.configure do
 
   # Do not dump schema after migrations.
   config.active_record.dump_schema_after_migration = false
+
+  config.paperclip_defaults = {
+  :storage => :s3,
+  :bucket => ENV['treeblog'],
+  :s3_credentials => {
+    :access_key_id => ENV['AKIAJE56SC5HH3XW3VTA'],
+    :secret_access_key => ENV['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']
+  }
+}
 end
