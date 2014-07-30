@@ -85,7 +85,7 @@ Rails.application.configure do
 
   config.paperclip_defaults = {
   :storage => :s3,
-  :bucket => ENV['treeblog'],
+  :bucket => ENV['S3_BUCKET_NAME'],
   :s3_credentials => {
     :access_key_id => ENV['AKIAJE56SC5HH3XW3VTA'],
     :secret_access_key => ENV['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']
