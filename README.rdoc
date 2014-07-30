@@ -1,6 +1,11 @@
 
-1. Heroku doesn't store images permanently, need Amazon S3 account to get paperclip to work.
-   https://devcenter.heroku.com/articles/paperclip-s3
+1. Needs a lot of work.
+
+
+
+
+
+
 
 2. Set up Author has_many articles relationship but can't figure out how to show on articles index page.  I'd like each article 
 to have a byline.
