@@ -22,6 +22,8 @@
 
  
 </ul>
+
+
  
  
  
@@ -41,7 +43,9 @@
         <h2><%= link_to article.title, article_path(article), class: 'article_title' %></a></h2>
         <%= link_to "Create a New Article", new_article_path, class: "new_article" %>
         <!--<h6>Written by <a href="#">John Smith</a> on August 12, 2012.</h6>-->
-        <h3>Written by <%= @users %> </h3>
+        <h3>Written by <%= article.author %> </h3>
+      
+       
  
         <div class="row">
           <div class="large-6 columns">
@@ -49,7 +53,7 @@
             <p>Boudin aliqua adipisicing rump corned beef. Nulla corned beef sunt ball tip, qui bresaola enim jowl. Capicola short ribs minim salami nulla nostrud pastrami.</p> -->
           </div>
           <div class="large-6 columns">
-            <%= image_tag article.image.url %>
+            <%= image_tag article.image.url(:regular) %>
           </div>
         </div>
  

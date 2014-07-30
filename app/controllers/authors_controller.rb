@@ -23,10 +23,12 @@ end
   # GET /authors/new
   def new
     @author = Author.new
+    @authors =Author.find(:all, :order => 'name')
   end
 
   # GET /authors/1/edit
   def edit
+    
   end
 
   # POST /authors
