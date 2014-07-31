@@ -51,6 +51,7 @@ gem 'heroku', '~> 3.9.6'
 
 gem "paperclip", "~> 4.1"
 gem 'aws-sdk'
+
 gem 's3_direct_upload'
 
 gem 'sorcery'
