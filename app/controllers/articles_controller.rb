@@ -29,8 +29,8 @@ end
 
    def create
         @article = Article.new(article_params)
-       
         @article.save
+        
         flash.notice = "Article '#{@article.title}' Posted!"
         redirect_to article_path(@article)
   end

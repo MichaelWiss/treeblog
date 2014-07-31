@@ -17,3 +17,5 @@
 //= require_tree .
 
 $(function(){ $(document).foundation(); });
+
+ $("#s3-uploader").S3Uploader();
