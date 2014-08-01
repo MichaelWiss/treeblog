@@ -31,13 +31,12 @@
   <% end %>
   <%= f.label :image, "Attach a New Image" %><br />
   <%= f.file_field :image %>
-  <%= s3_uploader_form callback_url:@article.image.url , callback_param: "model[image_url]", id: "s3-uploader" do %>
-  <%= file_field_tag :file, multiple: true %>
-<% end %>
+
+  
 </p>
   <p>
     <%= f.submit %>
   </p>
   </ul>
  </div>
-  <% end %>
+<% end %>
